@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #008080; -fx-border-width: 10; -fx-border-color: #7CFC00;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller.TimerController">
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="67.0" prefWidth="580.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="TimerbackBTN" mnemonicParsing="false" onAction="#BacktimerHandler" prefHeight="109.0" prefWidth="87.0" style="-fx-background-color: SpringGreen;" text="Back" />
+            <Label fx:id="SettimeLBL" alignment="CENTER" contentDisplay="CENTER" prefHeight="100.0" prefWidth="500.0" text="Set Your Time" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </top>
+   <bottom>
+      <Button fx:id="TimerstartBTN" mnemonicParsing="false" onAction="#TimerstartBTNHandler" prefHeight="57.0" prefWidth="580.0" style="-fx-background-color: PowderBlue;" text="Start!" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+   </bottom>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="251.0" prefWidth="580.0">
+               <children>
+                  <TextField fx:id="HourTXTField" alignment="CENTER" prefHeight="110.0" prefWidth="580.0" promptText="Hours :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="MinsTXTField" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="110.0" prefWidth="580.0" promptText="Minutes :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="SecTXTField" alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="110.0" prefWidth="580.0" promptText="Seconds :">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="289.0" prefWidth="580.0">
+               <children>
+                  <Label fx:id="HourLBL" alignment="CENTER" contentDisplay="CENTER" prefHeight="157.0" prefWidth="580.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MinsLBL" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="157.0" prefWidth="580.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="SecLBL" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="157.0" prefWidth="580.0" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label fx:id="ErrorTimerLBL" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="591.0" style="-fx-background-color: #008080;" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

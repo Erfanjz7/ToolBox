@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller.ZipPageController">
+   <top>
+      <Button fx:id="ZippagebackBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ZipStageBackHandler" prefHeight="47.0" prefWidth="580.0" style="-fx-background-color: white;" text="Back" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="258.0" prefWidth="580.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="292.0" prefWidth="145.0" spacing="90.0">
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="File Location" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" text="Zip Name" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" layoutX="120.0" layoutY="10.0" prefHeight="292.0" prefWidth="360.0" spacing="50.0">
+                     <children>
+                        <TextField fx:id="ZippagelocationTXTFiled" alignment="CENTER" prefHeight="59.0" prefWidth="524.0" />
+                        <TextField fx:id="ZippagezipnameTXTField" alignment="CENTER" layoutX="30.0" layoutY="147.0" prefHeight="59.0" prefWidth="524.0" />
+                     </children>
+                     <padding>
+                        <Insets left="20.0" right="20.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label fx:id="ZippageerrorLBL" alignment="CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="580.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Button fx:id="ZippagesaveBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ZipPageSaveHandler" prefHeight="41.0" prefWidth="580.0" style="-fx-background-color: white;" text="Save" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

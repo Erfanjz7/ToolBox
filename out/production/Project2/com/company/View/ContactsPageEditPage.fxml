@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller.ContactsEditPageController">
+   <top>
+      <HBox prefHeight="39.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ContactseditbackBTN" mnemonicParsing="false" onAction="#ContactsEditPageBackhandler" prefHeight="39.0" prefWidth="90.0" text="Back" />
+            <TextField fx:id="ContactsselectedcontactTXTField" prefHeight="60.0" prefWidth="575.0" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ContactseditloadBTN" mnemonicParsing="false" onAction="#ContactsEditPageLoadHandler" prefHeight="50.0" prefWidth="600.0" text="Load" />
+            <HBox prefHeight="265.0" prefWidth="600.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="25.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="94.0" text="Name" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="122.0" prefHeight="26.0" prefWidth="94.0" text="LastName" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="135.0" prefHeight="26.0" prefWidth="94.0" text="Adress" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="148.0" prefHeight="26.0" prefWidth="94.0" text="Phonenumber" />
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER" prefHeight="250.0" prefWidth="513.0" spacing="25.0">
+                     <children>
+                        <TextField fx:id="ContactseditnameTXTField" alignment="CENTER" promptText="Name" />
+                        <TextField fx:id="ContactseditlastnameTXTField" alignment="CENTER" layoutX="10.0" layoutY="123.0" promptText="LastName" />
+                        <TextField fx:id="ContactseditadressTXTField" alignment="CENTER" layoutX="10.0" layoutY="110.0" promptText="Adress" />
+                        <TextField fx:id="ContactseditphonenumberTXTField" alignment="CENTER" layoutX="10.0" layoutY="123.0" promptText="Phonenumber" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Label fx:id="ContactsediterrorLBL" alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="600.0" textAlignment="CENTER" />
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <Button fx:id="ContactseditsaveBTN" mnemonicParsing="false" onAction="#ContactsEditPageSaveHandler" prefHeight="39.0" prefWidth="600.0" text="Save" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black; -fx-border-color: white; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller.ZipAndUnzipPageController">
+   <top>
+      <Button fx:id="ZipandunzippagebackBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ZipANdUnzipBackHandler" prefHeight="32.0" prefWidth="690.0" style="-fx-background-color: white;" text="Back" textAlignment="CENTER" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="70.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="ZipandunzippagezipBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ZipZipHandler" prefHeight="86.0" prefWidth="174.0" style="-fx-background-color: white;" text="Zip" />
+            <Button fx:id="ZipandunzippageunzipBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="213.0" layoutY="141.0" mnemonicParsing="false" onAction="#ZipUnZipHandler" prefHeight="86.0" prefWidth="174.0" style="-fx-background-color: white;" text="Unzip" />
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

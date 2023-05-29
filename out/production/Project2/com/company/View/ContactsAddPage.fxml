@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="304.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller.ContactsAddPageController">
+   <center>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="304.0" prefWidth="508.0" spacing="40.0">
+               <children>
+                  <Label fx:id="ContactsaddpagenameLBL" alignment="CENTER" prefHeight="17.0" prefWidth="107.0" text="Name :" textAlignment="CENTER" />
+                  <Label fx:id="ContactsaddpagelastnameLBL" alignment="CENTER" layoutX="81.0" layoutY="154.0" prefHeight="17.0" prefWidth="107.0" text="LastName :" textAlignment="CENTER" />
+                  <Label fx:id="ContactsaddpageadressLBL" alignment="CENTER" layoutX="81.0" layoutY="145.0" prefHeight="17.0" prefWidth="107.0" text="Adress :" textAlignment="CENTER" />
+                  <Label fx:id="ContactsaddpagephonenumberLBL" alignment="CENTER" layoutX="81.0" layoutY="137.0" prefHeight="17.0" prefWidth="107.0" text="PhoneNumber" textAlignment="CENTER" />
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="304.0" prefWidth="813.0" spacing="31.0">
+               <children>
+                  <TextField fx:id="ContactsaddpagenameTXTField" alignment="CENTER" prefHeight="25.0" prefWidth="354.0" promptText="Name" />
+                  <TextField fx:id="ContactsaddpagelastnameTXTField" alignment="CENTER" layoutX="10.0" layoutY="150.0" prefHeight="25.0" prefWidth="354.0" promptText="Lastname" />
+                  <TextField fx:id="ContactsaddpagenadressTXTField" alignment="CENTER" layoutX="10.0" layoutY="137.0" prefHeight="25.0" prefWidth="354.0" promptText="Adress" />
+                  <TextField fx:id="ContactsaddpagephonenumberTXTField" alignment="CENTER" layoutX="10.0" layoutY="125.0" prefHeight="25.0" prefWidth="354.0" promptText="Phonenumber" />
+               </children>
+            </VBox>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+   </center>
+   <top>
+      <Button fx:id="ContactsaddpagebackBTN" mnemonicParsing="false" onAction="#ContactsAddPageBackhandler" prefHeight="35.0" prefWidth="96.0" text="Back" BorderPane.alignment="CENTER" />
+   </top>
+   <bottom>
+      <Button fx:id="ContactsaddpagesaveBTN" mnemonicParsing="false" onAction="#ContactsAddPageSaveHandler" prefHeight="33.0" prefWidth="79.0" text="Save" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #00FFFF; -fx-border-color: #00008B; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.Controller.MainPageController">
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="36.0" prefWidth="329.0" text="Welcome to Erfanjz7's Toolbox! :)" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Berlin Sans FB" size="24.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <HBox alignment="CENTER" prefHeight="345.0" prefWidth="581.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" prefHeight="345.0" prefWidth="60.0" spacing="75.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="1-" textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="10.0" text="5-" textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="10.0" prefHeight="19.0" prefWidth="0.0" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="251.0" layoutY="10.0" prefHeight="200.0" prefWidth="115.0" spacing="75.0">
+               <children>
+                  <Button fx:id="NotePadBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#NotePadHandler" prefHeight="25.0" prefWidth="95.0" text="Notepad" textAlignment="CENTER" />
+                  <Button fx:id="MediaplayerBTn" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="170.0" mnemonicParsing="false" onAction="#MediaPlayerHandler" prefHeight="25.0" prefWidth="95.0" text="MediaPlayer" textAlignment="CENTER" />
+                  <Label />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="201.0" layoutY="10.0" prefHeight="200.0" prefWidth="60.0" spacing="75.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="2-" textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="10.0" prefHeight="34.0" prefWidth="12.0" text="6-" textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="10.0" text="9-" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="151.0" layoutY="10.0" prefHeight="200.0" prefWidth="115.0" spacing="75.0">
+               <children>
+                  <Button fx:id="StopWatchBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#StopWatchHandler" prefHeight="25.0" prefWidth="95.0" text="Stopwatch" textAlignment="CENTER" />
+                  <Button fx:id="DateconverterBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="170.0" mnemonicParsing="false" onAction="#DateConverterHandler" prefHeight="25.0" prefWidth="102.0" text="Date Converter" textAlignment="CENTER" />
+                  <Button fx:id="AutoPowerOffBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="120.0" mnemonicParsing="false" onAction="#AutoPowerOffHandler" prefHeight="25.0" prefWidth="95.0" text="Auto PoweOff" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="101.0" layoutY="10.0" prefHeight="200.0" prefWidth="60.0" spacing="75.0">
+               <children>
+                  <Label text="3-" />
+                  <Label layoutX="33.0" layoutY="174.0" prefHeight="31.0" prefWidth="12.0" text="7-" />
+                  <Label layoutX="33.0" layoutY="220.0" prefHeight="24.0" prefWidth="18.0" text="10-" />
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="51.0" layoutY="10.0" prefHeight="200.0" prefWidth="115.0" spacing="75.0">
+               <children>
+                  <Button fx:id="TimerBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#TimerHandler" prefHeight="25.0" prefWidth="95.0" text="Timer" textAlignment="CENTER" />
+                  <Button fx:id="CalculatorBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="170.0" mnemonicParsing="false" onAction="#CalculatorHandler" prefHeight="25.0" prefWidth="95.0" text="Calculator" textAlignment="CENTER" />
+                  <Button fx:id="ExitBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="120.0" mnemonicParsing="false" onAction="#ExitHandler" prefHeight="25.0" prefWidth="95.0" text="Exit" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="60.0" spacing="75.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="4-" textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="10.0" prefHeight="32.0" prefWidth="12.0" text="8-" textAlignment="CENTER" />
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="10.0" prefHeight="25.0" prefWidth="0.0" textAlignment="CENTER" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="115.0" spacing="75.0">
+               <children>
+                  <Button fx:id="ContactsBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#ContactsHandler" prefHeight="25.0" prefWidth="95.0" text="Contacts" textAlignment="CENTER" />
+                  <Button fx:id="zipandunzipBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="170.0" mnemonicParsing="false" onAction="#ZipAndUnzipHandler" prefHeight="25.0" prefWidth="95.0" text="Zip &amp; Unzip" textAlignment="CENTER" />
+                  <Label prefHeight="28.0" prefWidth="0.0" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+      </HBox>
+   </center>
+</BorderPane>

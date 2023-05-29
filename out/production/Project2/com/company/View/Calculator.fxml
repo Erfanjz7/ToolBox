@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="478.0" style="-fx-border-color: red; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="487.0" prefWidth="412.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="PrntngLBL" alignment="CENTER" contentDisplay="CENTER" prefHeight="182.0" prefWidth="458.0" textAlignment="CENTER" />
+            <HBox alignment="CENTER" prefHeight="98.0">
+               <children>
+                  <Button fx:id="EqualBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="103.0" prefWidth="115.0" text="=" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="PowerBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="115.0" text="^" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="RemainingBTN" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="106.0" prefWidth="115.0" text="\%" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="DivisionBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="115.0" text="/" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="192.0" prefHeight="98.0">
+               <children>
+                  <Button fx:id="OneBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="103.0" prefWidth="115.0" text="1" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="TwoBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="102.0" prefWidth="115.0" text="2" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ThreeBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="106.0" prefWidth="115.0" text="3" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="XBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="115.0" text="X" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="192.0" prefHeight="98.0">
+               <children>
+                  <Button fx:id="FourBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="103.0" prefWidth="115.0" text="4" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="FiveBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="102.0" prefWidth="115.0" text="5" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="SixBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="106.0" prefWidth="115.0" text="6" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="PlusBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="115.0" text="+" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="192.0" prefHeight="98.0">
+               <children>
+                  <Button fx:id="SevenBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="102.0" prefWidth="115.0" text="7" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="EightBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="106.0" prefWidth="115.0" text="8" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="NineBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="103.0" prefWidth="115.0" text="9" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="MinusBTN" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="100.0" prefWidth="115.0" text="-" textAlignment="CENTER">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
